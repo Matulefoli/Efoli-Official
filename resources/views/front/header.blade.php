@@ -35,7 +35,7 @@
                            
                         </li>
                         <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" >
+                            <a class="nav-link dropdown-toggle" href="{{route('efoli_career')}}" role="button" >
                                 Career
                             </a>
                             

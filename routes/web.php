@@ -74,3 +74,5 @@ Route::get('about_us','ContactController@about');
 Route::post('contact_message','ContactUsController@save_message')->name('contact_message');
 Route::get('thankyou','ContactUsController@thankyou');
 Route::get('EfoliTeam','HomeController@team')->name('front.team');
+Route::get('Efoli_career','CareerController@index')->name('efoli_career');
+Route::get('SingleJobDescription/{id}','CareerController@single')->name('single_job_description');

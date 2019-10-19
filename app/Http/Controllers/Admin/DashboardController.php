@@ -28,10 +28,10 @@ class DashboardController extends AdminBaseController
         if (Hash::check($request->password, $admin->password)) {
             Auth::login($admin);
             $ip=$request->ip();
-            if($ip!=$admin->ip){
-                Auth::logout();
-                return 'access denied';
-            }
+            // if($ip!=$admin->ip){
+            //     Auth::logout();
+            //     return 'access denied';
+            // }
             return redirect('admin/dashboard');
         }
         return redirect()->back()->withInput();
