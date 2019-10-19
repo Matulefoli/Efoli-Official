@@ -78,9 +78,9 @@ class TeamController extends AdminBaseController
     }
     public function manage_team(){
         $this->pageTitle='Add Team';
-        $this->members=TeamMember::get();
-        $this->teams=TeamCategory::get();
-        $this->join_tables=TeamMemberJoinTable::get();
+        $this->members=TeamMember::all();
+        $this->teams=TeamCategory::all();
+        $this->join_tables=TeamMemberJoinTable::all();
         return view('admin.team.manage',$this->data);
     }
     public function make_connection_team(Request $request){

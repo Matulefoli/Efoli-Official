@@ -28,7 +28,7 @@
                                 <ul class="list-unstyled f_list">
                                     <li><a href="{{route('contact_us')}}">Contact Us</a></li>
                                     <li><a href="#">Career</a></li>
-                                    <li><a href="#">Team</a></li>
+                                    <li><a  href="{{route('front.team')}}">Team</a></li>
                                    
                                 </ul>
                             </div>

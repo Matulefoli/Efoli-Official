@@ -5,13 +5,16 @@
                 <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset($site_setting->ws_header_icon)}}" style="border-radius:5%;" width="100px" height="100px" alt="logo"></a>
                 
                 <div class="text-info">
-                        <h2>{{$site_setting->ws_title}}</h2>
-                        <sub><h6>{{$site_setting->ws_sub_title}}</h6></sub>
+                    <a href="{{url('/')}}">
+                            <h2>{{$site_setting->ws_title}}</h2>
+                            <sub><h6>{{$site_setting->ws_sub_title}}</h6></sub>
+                    </a>
+                       
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto menu">
                         <li class="nav-item dropdown submenu mega_menu mega_menu_two active">
-                            <a class="nav-link dropdown-toggle" href="{{url('/')}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="{{url('/')}}" role="button" >
                                 Home
                             </a>
                             

@@ -30,7 +30,7 @@ class HomeController extends FrontBaseController
     }
     public function team(){
         $this->pageTitle='Efoli Team';
-        $this->teams=TeamCategory::get();
+        $this->teams=TeamCategory::orderBy('category_priority','desc')->get();
         return view('front.team',$this->data);
     }
 }

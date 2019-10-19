@@ -22,15 +22,19 @@
                                        @php
                                            $mem=App\TeamMember::find($item->member);
                                        @endphp
+                                       @if($mem)
                                        {{$mem->name}} <br>
                                        {{$mem->designation}} <br>
+                                       @endif
                                       
                                    </td>
                                    <td>
                                         @php
                                             $mem=App\TeamCategory::find($item->team);
                                          @endphp
+                                         @if($mem)
                                        {{$mem->category_name}}
+                                       @endif
                                    </td>
                                    <td>
                                        <a href="{{route('team_join_del',$item->id)}}" class="btn btn-danger">Delete</a>

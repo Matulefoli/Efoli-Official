@@ -18,8 +18,14 @@
                         <ul>
                             @foreach ($members as $member)
                                 @php
-                                    $person=App\TeamMember::find($member->member);
+                                    $person=App\TeamMember::find($member->member); 
+                                    $person_image=App\ImageGallery::where('model_id',$person->id)->where('model_type','App\TeamMember')->first();
                                 @endphp
+                                <li>
+                                    @if($person_image)
+                                    <img src="{{asset($person_image->image)}}" width="100px" alt="">
+                                    @endif
+                                </li>
                                 <li>Name: <b>{{$person->name}}</b></li>
                                 <ul class="card">
                                 <li>Designation: <b>
