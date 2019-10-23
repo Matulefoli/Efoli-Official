@@ -21,7 +21,7 @@
                 
                 <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/bootstrap.min.css')}}">
                 <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/bootstrap-extended.min.css')}}">
-                {{-- <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/colors.min.css')}}"> --}}
+              
                 <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/components.min.css')}}">
                 <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/themes/dark-layout.min.css')}}">
                 <link rel="stylesheet" type="text/css" href="{{asset('back-asset/app-assets/css/themes/semi-dark-layout.min.css')}}">
@@ -50,15 +50,13 @@
         </div>
         
         <script src="{{asset('back-asset/app-assets/vendors/js/vendors.min.js')}}"></script>
-        {{-- <script src="{{asset('back-asset/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js')}}"></script>
-             <script src="{{asset('back-asset/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.min.js')}}"></script> --}}
-        {{-- <script src="{{asset('back-asset/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js')}}"></script>  --}}
+        
         
         <script src="{{asset('back-asset/app-assets/js/scripts/configs/vertical-menu-light.min.js')}}"></script>
         <script src="{{asset('back-asset/app-assets/js/core/app-menu.min.js')}}"></script>
         <script src="{{asset('back-asset/app-assets/js/core/app.min.js')}}"></script>
         <script src="{{asset('back-asset/app-assets/js/scripts/components.min.js')}}"></script>
-        {{-- <script src="{{asset('back-asset/app-assets/js/scripts/footer.min.js')}}"></script> --}}
+       
         <script src="{{asset('fontawesome/js/all.js')}}"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
         @yield('script')

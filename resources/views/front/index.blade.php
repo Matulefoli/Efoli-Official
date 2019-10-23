@@ -135,22 +135,7 @@ $j=0;
                                         $j++;
                                     @endphp
                             </a>
-                            {{-- <a href="#">
-                                    @if(sizeof($gellaries)>$j)
-                                    <img src="{{asset($gellaries[$j]->image)}}" alt="">
-                                    @endif
-                                    @php
-                                        $j++;
-                                    @endphp
-                            </a>
-                            <a href="#">
-                                    @if(sizeof($gellaries)>$j)
-                                    <img src="{{asset($gellaries[$j]->image)}}" alt="">
-                                    @endif
-                                    @php
-                                        $j++;
-                                    @endphp
-                            </a> --}}
+                            
                         </div>
                         <p>
                             @if(sizeof($dialouges)>$i)
@@ -192,22 +177,7 @@ $j=0;
                                         $j++;
                                     @endphp
                             </a>
-                            {{-- <a href="#">
-                                    @if(sizeof($gellaries)>$j)
-                                    <img src="{{asset($gellaries[$j]->image)}}" alt="">
-                                    @endif
-                                    @php
-                                        $j++;
-                                    @endphp
-                            </a>
-                            <a href="#">
-                                    @if(sizeof($gellaries)>$j)
-                                    <img src="{{asset($gellaries[$j]->image)}}" alt="">
-                                    @endif
-                                    @php
-                                        $j++;
-                                    @endphp
-                            </a> --}}
+                            
                         </div>
                         <p>
                                 @if(sizeof($dialouges)>$i)

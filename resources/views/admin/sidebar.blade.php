@@ -47,14 +47,14 @@
                 </i><span class="menu-title" data-i18n="File Manager">Applications</span>
             </a>
             <ul class="#">
-                    <li><a href="app-invoice-list.html"></i><span class="menu-item" data-i18n="Invoice List">View All Applications</span></a>
+                    <li><a href="{{route('all_received_application')}}"></i><span class="menu-item" data-i18n="Invoice List">View All Applications</span></a>
                     </li>
-                    <li><a href="app-invoice.html"></i><span class="menu-item" data-i18n="Invoice">Accepted Applications</span></a>
-                    </li>
-                    <li><a href="app-invoice-edit.html"></i><span class="menu-item" data-i18n="Invoice Edit">Rejected Application</span></a>
-                    </li>
-                    <li><a href="app-invoice-add.html"></i><span class="menu-item" data-i18n="Invoice Add">Meeting Schedules</span></a>
-                    </li>
+                    {{-- <li><a href="{{route('all_short_list_get')}}"></i><span class="menu-item" data-i18n="Invoice">Shortlisted Applications</span></a>
+                    </li> --}}
+                    {{-- <li><a href="app-invoice-edit.html"></i><span class="menu-item" data-i18n="Invoice Edit">Rejected Application</span></a>
+                    </li> --}}
+                    {{-- <li><a href="app-invoice-add.html"></i><span class="menu-item" data-i18n="Invoice Add">Meeting Schedules</span></a>
+                    </li> --}}
             </ul>
         </li>
         <li class=" nav-item">
@@ -84,7 +84,7 @@
                     </li>
                     <li><a href="{{route('addexam')}}"></i><span class="menu-item" data-i18n="Invoice">Add Exam</span></a>
                     </li>
-                    <li><a href="{{route('exams')}}"></i><span class="menu-item" data-i18n="Invoice">Exams</span></a>
+                    <li><a href="{{route('all_question')}}"></i><span class="menu-item" data-i18n="Invoice">Exams</span></a>
                     </li>
                     
             </ul>

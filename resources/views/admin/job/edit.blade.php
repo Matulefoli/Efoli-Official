@@ -12,6 +12,7 @@
                         <form id="storeProduct" method="POST" action="{{route('admin.storejob')}}" class="wizard-horizontal" enctype="multipart/form-data">
                         @csrf
                         <fieldset>
+                            <input type="hidden" name="edit_job_id" value="{{$job->id}}">
                         <div class="row">
                             
                             <div class="col-sm-6">
@@ -87,7 +88,12 @@
                                     <input name="vacancy" value="{{$job->vacancy}}" type="text" class="form-control" >
                                     
                                 </div>
-                           
+                                <div class="form-group col-md-3 col-sm-6">
+                                        <label>Salary</label>
+                                        
+                                        <input name="salary" value="{{$job->salary_note}}" type="text" class="form-control" >
+                                        
+                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="d-block">Status</label>

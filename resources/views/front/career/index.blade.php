@@ -8,7 +8,7 @@
         <div class="container">
             @if($jobs)
             @foreach ($jobs as $job)
-              @php
+            @php
                   $today=Carbon\Carbon::today();
                   if($job->expiration_date){
 
@@ -17,7 +17,7 @@
                           continue;
                         }
                   }
-              @endphp  
+            @endphp  
           
             <div class="row flex-row-reverse app_feature_info">
                 <div class="col-lg-6">
@@ -51,6 +51,7 @@
                 </div>
             </div>
             @endforeach
+            {{ $jobs->links() }}
             @endif
         </div>
     </section>

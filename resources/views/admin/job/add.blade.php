@@ -76,6 +76,12 @@
                                     <input name="vacancy" type="text" class="form-control" >
                                     
                                 </div>
+                                <div class="form-group col-md-3 col-sm-6">
+                                    <label>Salary</label>
+                                    
+                                    <input name="salary" type="text" class="form-control" >
+                                    
+                                </div>
                            
                                 <div class="col-md-6">
                                     <div class="form-group">

@@ -87,6 +87,10 @@
                                 print_r($job->special_note);
                             @endphp
                     </p>
+                    <p class="card-text">
+                        <h3>{{$job->salary_note}}</h3>
+                        
+                    </p>
                 </div>
            
         </div>

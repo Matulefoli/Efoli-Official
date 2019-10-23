@@ -72,7 +72,8 @@
                                    print_r($job->special_note);
                                 @endphp
                         </p>
-                        <a href="#" class="learn_btn_two">See All Featureds <i class="ti-arrow-right"></i></a>
+                        <a href="{{route('applynow',$job->id)}}" class="learn_btn_two">
+                            Apply Now <i class="ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

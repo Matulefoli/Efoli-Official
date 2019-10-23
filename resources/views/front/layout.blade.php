@@ -10,9 +10,7 @@
         <meta name="author" content="{{$meta_data->author}}" />
         <meta http-equiv="expires" content="{{$meta_data->expires}}"/>
         <title>{{$pageTitle}}</title>
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{asset('front-asset/asset/css/bootstrap.min.css')}}">
-        <!--icon font css-->
         <link rel="stylesheet" href="{{asset('front-asset/asset/themify-icon/themify-icons.css')}}">
         <link rel="stylesheet" href="{{asset('front-asset/asset/elagent/style.css')}}">
         <link rel="stylesheet" href="{{asset('front-asset/asset/flaticon/flaticon.css')}}">
@@ -20,29 +18,18 @@
         <link rel="stylesheet" href="{{asset('front-asset/asset/owl-carousel/assets/owl.carousel.min.css')}}">
         <link rel="stylesheet" href="{{asset('front-asset/asset/magnify-pop/magnific-popup.css')}}">
         <link rel="stylesheet" href="{{asset('front-asset/asset/css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('front-asset/asset/css/responsive.css')}}">
-      
+        <link rel="stylesheet" href="{{asset('front-asset/asset/css/responsive.css')}}">     
 </head>
-
-<body>
-   
+<body> 
     @yield('preloader')
     @include('front.header')
     @yield('content')
-    @include('front.footer')
-  
-    <script src="{{asset('front-asset/asset/bootstrap-selector/js/bootstrap-select.min.js')}}"></script>
- 
-    
+    @include('front.footer') 
+    <script src="{{asset('front-asset/asset/bootstrap-selector/js/bootstrap-select.min.js')}}"></script>   
     <script src="{{asset('front-asset/asset/nice-select/jquery.nice-select.min.js')}}"></script>
- 
-    
-    
-   
     <script src="{{asset('front-asset/asset/multiscroll/jquery.easings.min.js')}}"></script>
     <script src="{{asset('front-asset/asset/multiscroll/multiscroll.responsiveExpand.limited.min.js')}}"></script>
     <script src="{{asset('front-asset/asset/multiscroll/jquery.multiscroll.extensions.min.js')}}"></script>
-   
     <script src="{{asset('front-asset/asset/js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('front-asset/asset/js/propper.js')}}"></script>
     <script src="{{asset('front-asset/asset/js/bootstrap.min.js')}}"></script>
@@ -55,6 +42,6 @@
     <script src="{{asset('front-asset/asset/scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
     <script src="{{asset('front-asset/asset/js/plugins.js')}}"></script>
     <script src="{{asset('front-asset/asset/js/main.js')}}"></script>
+    @yield('admin_script')
 </body>
-
 </html>

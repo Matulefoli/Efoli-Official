@@ -6,6 +6,7 @@
                 <div class="card icon-tab">
                     <div class="card-header">
                     <h4 class="card-title">Question</h4>
+                    <hr>
                     </div>
                     <div class="card-content mt-2">
                     <div class="card-body">
@@ -14,31 +15,22 @@
                         <fieldset>
                         <div class="row">
                             
-                            <div class="col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <h3>Job</h3>
-                                    <select name="job" id="" class="form-control">
-                                        @if($jobs)
-                                        @foreach($jobs as $job)
-                                            <option value="{{$job->id}}">{{$job->title}}</option>
-                                        @endforeach
-
-                                        @endif
-                                    </select>
-                                </div>
-                            </div>
+                            
                             <div class="form-group col-sm-12 col-md-12">
-                                <select name="type" class="form-control" id="">
-                                    <option value="contest_contest">Single file(contest)</option>
-                                    <option value="single">Single file</option>
-                                    <option value="multiple">Objective</option>
-                                </select>
+                                <h2>Question Name</h2>
+                                <input type="text"  name="name" placeholder="Question name" class="form-control" required>
                             </div>
                             <div class="form-group col-sm-5 col-md-5">
-                                <label for="">Q Setter Email</label>
-                                <input type="email"  name="setter" class="form-control">
+                                <h3>Status</h3>
+                                <label for="">Active</label>
+                                <input type="radio" value="1" checked  name="status" >
+                                <label for="">Dective</label>
+                                <input type="radio" value="0" name="status" >
                             </div>
                             <div class="form-group col-sm-5 col-md-5">
+                                <h3>
+                                    Time 
+                                </h3>
                                     <label for="" class="float-left">HH</label>
                                     <input type="number"  name="hh" class="form-control col-sm-2 col-md-2 float-left">
                                     <label for="" class="float-left">MM</label>

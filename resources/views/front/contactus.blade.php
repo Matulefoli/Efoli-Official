@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group text_box">
-                                            <input type="text" name="email" id="email" placeholder="Your Email">
+                                            <input type="eamil" name="email" id="email" placeholder="Your Email">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">

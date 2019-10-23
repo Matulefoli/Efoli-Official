@@ -7,9 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
 {
+    
     public static function addJob($data){
         try{
-            $job=new Job;
+            if(isset($data->edit_job_id)){
+                $job=Job::find($data->edit_job_id);
+            }else{
+                $job=new Job;
+            }
+          
             $job->title=$data->title;
             $job->description=$data->description;
             $job->responsibilty=$data->responsibility;
@@ -20,6 +26,7 @@ class Job extends Model
             $job->expiration_date=$data->end_date;
             $job->vacancy=$data->vacancy;
             $job->status=$data->status;
+            $job->salary_note=$data->salary;
             $job->save();
             foreach($data->file('image') as $image){
                 $path=public_path('/job/image');

@@ -1,9 +1,8 @@
 @extends('admin.layout')
 @section('content')
 
-        <div class="content-header row">
-        </div>
-        <div class="content-body"><!-- Dashboard Ecommerce Starts -->
+
+<div class="content-body"><!-- Dashboard Ecommerce Starts -->
 <section id="dashboard-ecommerce">
   <div class="row">
     <!-- Greetings Content Starts -->
@@ -1024,6 +1023,6 @@
 </section>
 <!-- Dashboard Ecommerce ends -->
 
-        </div>
+</div>
      
 @endsection

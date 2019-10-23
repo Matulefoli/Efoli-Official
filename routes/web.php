@@ -42,13 +42,18 @@ Route::group(['prefix'=>'admin','middleware'=>['AdminCheck']], function () {
    Route::get('editjob\{id}','Admin\JobController@edit')->name('edit_job');
    Route::any('job_image_delete/{id}','Admin\JobController@job_image_delete');
    Route::get('add_exam','Admin\ExamController@add')->name('addexam');
-   Route::get('exams','Admin\ExamController@view')->name('exams');
+   Route::get('exams','Admin\ExamController@view')->name('all_question');
+   Route::get('all_question','Admin\ExamController@all_question')->name('all_question');
+   Route::get('see_question/{id}','Admin\ExamController@see_question')->name('see_question');
    Route::post('select_question','Admin\ExamController@select_question')->name('select_question');
+   Route::get('set_question/{id}','Admin\ExamController@set_question')->name('set_question');
+   Route::get('make_question','Admin\ExamController@make_question');
    Route::get('contest_setup/{id}','Admin\ExamController@contest_setup');
-   Route::get('single_setup/{id}','Admin\ExamController@single_setup');
-   Route::get('multipe_setup/{id}','Admin\ExamController@multipe_setup');
+   Route::get('attach_to_job','Admin\ExamController@attach_to_job');
+   // Route::get('multipe_setup/{id}','Admin\ExamController@multipe_setup');
    Route::post('save_paper','Admin\ExamController@paper_save')->name('paper_save');
    Route::post('delques','Admin\ExamController@delete')->name('delete_ques');
+   Route::get('active_deactive_question/{id}','Admin\ExamController@active_deactive_question');
    Route::get('comments','Admin\CommentController@comment')->name('comments');
    Route::post('save_comment','Admin\CommentController@comment_save')->name('save_comment');
    Route::get('comment_del/{id}','Admin\CommentController@comment_del');
@@ -66,7 +71,14 @@ Route::group(['prefix'=>'admin','middleware'=>['AdminCheck']], function () {
    Route::post('make_connection_team','Admin\TeamController@make_connection_team')->name('make_connection_team');
    Route::get('team_join_del/{id}','Admin\TeamController@team_join_del')->name('team_join_del');
    Route::get('team_admin_delete/{id}','Admin\TeamController@delete');
-   
+
+   Route::get('all_received_application','Admin\ApplicationController@all_application')->name('all_received_application');
+   Route::get('all_applications_get/{id}','Admin\ApplicationController@get_all_applications')->name('all_applications_get');
+   Route::get('del_application/{id}','Admin\ApplicationController@del_application');
+   Route::get('add_short_list/{id}/{id1}','Admin\ApplicationController@add_short_list');
+   Route::get('see_answer_script/{id}/{id1}','Admin\ApplicationController@see_answer_script');
+   Route::get('all_short_list_get/{id}','Admin\ApplicationController@all_short_list_get')->name('all_short_list_get');
+   Route::any('send_efoli_mail','Admin\ApplicationController@send_efoli_mail');
 
 });
 Route::get('contactus','ContactController@index')->name('contact_us');
@@ -76,3 +88,16 @@ Route::get('thankyou','ContactUsController@thankyou');
 Route::get('EfoliTeam','HomeController@team')->name('front.team');
 Route::get('Efoli_career','CareerController@index')->name('efoli_career');
 Route::get('SingleJobDescription/{id}','CareerController@single')->name('single_job_description');
+Route::get('AppyNow/{id}','CareerController@applynow')->name('applynow');
+Route::post('send_basic_info','CareerController@basic')->name('send_basic_info');
+Route::any('start_exam/{id}/{id1}/{id2}','CareerController@start_exam')->name('start_exam');
+Route::get('pre_exam/{id}/{id1}/{id2}','CareerController@pre_exam');
+Route::post('submit_answer_sheet','CareerController@submit_answer_sheet')->name('submit_answer_sheet');
+
+
+
+
+
+
+
+Route::any('test','CareerController@test');
